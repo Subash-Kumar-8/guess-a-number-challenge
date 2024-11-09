@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.full{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.navbar{
+    background-color: chocolate;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.disclaimer{
+    margin: 10px;
+    margin-left: 0;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+.disclaimer h2{
+    color: crimson;
+    padding-left: 23%;
+}
+.rule{
+    padding: 10px;
+    margin: 5px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 500px;
+}
+.input{
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    height: 100px;
+    width: 200px;
+    flex-wrap: wrap;
+}
+.overlay{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left:0;
+    top: 0;
+    opacity: 0.8;
+    display: none;
+}
+.popup-win{
+    background-color: blueviolet;
+    position: absolute;
+    padding: 10px;
+    height: 100px;
+    width: 500px;
+    top: 30%;
+    left: 30%;
+    z-index: 2;
+    border: solid red 5px;
+    border-radius: 10px;
+    display: none;
+}
+.popup-lose{
+    background-color: gray;
+    position: absolute;
+    padding: 10px;
+    height: 100px;
+    width: 500px;
+    top: 30%;
+    left: 30%;
+    z-index: 2;
+    border: solid red 5px;
+    border-radius: 10px;
+    display: none;
+}
+}
+.button{
+    background-color:burlywood;
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 5px;
+}
+.backvid{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    display: flex;
+}
+@media screen and (min-width:320px){
+    .rule{
+        width: 300px;
+    }
+    .input{
+        position: absolute;
+        top: 100%;
+    }
+    .backvid{
+        background-size: contain; 
+    }
+}

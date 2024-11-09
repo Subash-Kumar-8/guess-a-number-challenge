@@ -1,0 +1,79 @@
+<!DOCTYPEhtml>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Guess a Number</title>
+        <link rel="icon" href="Files/Icon.jpg">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="full">
+            <div class="backvid">
+                <video autoplay loop muted src="Files/back%20video.mp4"></video>
+            </div>
+            <div class="navbar">
+                <h1><b>Guess a Number Challenge</b></h1>
+            </div>
+            <div class="disclaimer">
+                <h2>Disclaimer</h2>
+                <p>If the website is not clearly visible, please reload the website. It is a game based on luck. It is not a gambling because there is no need to pay money to play. Gambling or betting based on luck is illegal.</p>
+            </div>
+            <div class="rule">
+                <h2><u><i>Rules:</i></u></h2>
+                <ol>
+                    <li>
+                        Computer generate a number from the range of 1-10.
+                    </li>
+                    <li>
+                        You have to guess the number that computer had took.
+                    </li>
+                    <li>
+                        You'll be provided with score that is 10 points.
+                    </li>
+                    <li>
+                        If your guess is equal to the number that computer takes, you'll win the game.
+                    </li>
+                    <li>
+                        Otherwise your score will get reduced,i.e., -1point.
+                    </li>
+                    <li>
+                        If your score is zero you will lose the game.
+                    </li>
+                    <li>
+                        Play the game in relax manner. Don't worry if you lose, Just try it again.
+                    </li>
+                    <li>
+                        Lets start the game.
+                    </li>
+                    <li>
+                        Type your guess in the input box.
+                    </li>
+                </ol>
+            </div>
+            <div class="input">
+                <input type="number" placeholder="Enter number(1-10)" id="num">
+                <button type="button" class="button" onclick="check()">Check</button>
+                <p id="para">Your Result will be displayed here</p>
+                <p id="score">Score:10</p>
+            </div>
+            <div class="popup">
+                <div class="overlay"></div>
+                <div class="popup-win">
+                    <h1>😊You Have Won The Game!!!😊</h1>
+                    <button class="button" onclick="resetGame()">Back</button>
+                </div>
+                <div class="popup-lose">
+                    <h1>Oops!You Lost The Game...😔</h1>
+                    <h3>The number is:</h3>
+                    <h2>Try Again...</h2>
+                    <button class="button" onclick="resetGame()">Back</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+    </html>
